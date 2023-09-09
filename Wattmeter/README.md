@@ -21,13 +21,15 @@ Market/material limitation:
 - we have a lot of 1k, 2k2, 10k, 47k, 270k resistor
 
 
-Voltage divider for volt sense:
-$V_2 =  \cdot {\frac{R_2}{R_1+R_2}}{V_CC}$
-$\cdot{V_CC\}{R_2}  =  \cdot{(R_1 - R_2)}{V_2} $
-$\frac{\cdot{V_CC}{R_2} + \cdot {R_2}{V_2}}{V_2} = R_1 $
+### Voltage divider for volt sense:
+$$V_2 =   {\frac{R_2}{R_1+R_2}}\cdot{V_{CC}}$$
+$${V_{CC}}\cdot{R_2}  =  (R_1 - R_2)\cdot{V_2} $$
+$$\frac{{V_{CC}}\cdot{R_2} + {R_2}\cdot {V_2}}{V_2} = R_1 $$
 
-since $V_2$ is 3 volt (not 3.3V for safety reason) and $V_CC = 24$ and $R_2 = 2k2$ at first
-$R_1 = \frac{\cdot{24}{2.2} + \cdot {2.2}{3}}{3}$
-$R_1 =  19.8K$
-Let round it up to 47K since it sthe closest and have more resistance, hence less current will be used
+since $V_2$ is 1 volt (not 3.3V for safety reason) and $V_{CC} = 24$ and $R_2 = 2k2$ at first
+$$R_1 = \frac{{24}\cdot{2.2} + {2.2}\cdot {1}}{1}$$
+$R_1 =  50K$
+Let round it up to 47K since its the closest 
+
+### Current Sense: (WIP)
 
